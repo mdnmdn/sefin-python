@@ -13,3 +13,4 @@
 * Notebook [05_controllo_del_flusso.ipynb](nb/05_controllo_del_flusso.ipynb)
 * Notebook [06_file.ipynb](nb/06_file.ipynb)
 * Esercizi [06_esercizi.md](nb/06_esercizi.md)
+
