@@ -1,0 +1,4 @@
+recursive-include filmwebapp/public *
+include filmwebapp/public/favicon.ico
+recursive-include filmwebapp/i18n *
+recursive-include filmwebapp/templates *

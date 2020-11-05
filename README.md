@@ -58,7 +58,7 @@ cd filmwebapp
 pip install -e .
 ```
 
-L'ultima istruzione (pip install -e .) configuta python per poter leggere correttamente le librerie e i moduli interni del nuovo progetto.
+L'ultima istruzione (`pip install -e .`) configuta python per poter leggere correttamente le librerie e i moduli interni del nuovo progetto.
 
 
 ### Per avviare il progetto in modalità sviluppo
