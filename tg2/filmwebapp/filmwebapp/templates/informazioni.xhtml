@@ -6,7 +6,25 @@
 <body py:block="body" py:strip="True">
   <h1>Pagina di informazioni</h1>
   <p>ciao</p>
-
+  <p>
+    messaggio: ${messaggio}
+  </p>
+  <p>
+    parametri: ${parametri}
+  </p>
+  <p>
+    max: ${max_count}
+  </p>
+  <p>
+    conta:
+    <span py:for="i in range(1, max_count)">${i} </span>
+  </p>
+  <ul >
+    <li py:for="p in parametri">
+      ${p}: ${parametri[p]}
+    </li>
+    
+  </ul>
   
 </body>
 </html>

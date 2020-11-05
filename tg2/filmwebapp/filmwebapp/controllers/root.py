@@ -62,8 +62,17 @@ class RootController(BaseController):
 
 
     @expose('filmwebapp.templates.informazioni')
-    def informazioni(self, **params):        
-        return {}
+    def informazioni(self, **params):
+
+        max = params.get('max', 0)
+
+        max_count = int(max) + 1
+
+        return {
+            "max_count": max_count,
+            "messaggio": "tutto ok",
+            "parametri": params,
+        }
 
     @expose('json')
     def clienti(self):
