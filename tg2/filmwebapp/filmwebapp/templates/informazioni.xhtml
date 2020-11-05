@@ -4,24 +4,38 @@
     </head>
 
 <body py:block="body" py:strip="True">
-  <h1>Pagina di informazioni</h1>
-  <p>ciao</p>
+  <h1>Pagina di informazioni</h1>  
   <p>
     messaggio: ${messaggio}
   </p>
   <p>
-    parametri: ${parametri}
+    parametri: ${parametri} 
   </p>
-  <p>
+  <p >
     max: ${max_count}
   </p>
   <p>
     conta:
-    <span py:for="i in range(1, max_count)">${i} </span>
+    <span py:for="i in range(1, max_count)">
+      ${i}
+    </span>
   </p>
   <ul >
     <li py:for="p in parametri">
       ${p}: ${parametri[p]}
+    </li>
+    
+  </ul>
+  <ul >
+    <li py:for="i in range(1,21)">
+      ${i}
+      <span py:if="i % 2 == 0">
+        pari
+      </span>
+      <span py:if="i % 2 != 0">
+        dispari
+      </span>
+      
     </li>
     
   </ul>

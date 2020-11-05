@@ -69,6 +69,7 @@ class RootController(BaseController):
         max_count = int(max) + 1
 
         return {
+            "page": "info",
             "max_count": max_count,
             "messaggio": "tutto ok",
             "parametri": params,
