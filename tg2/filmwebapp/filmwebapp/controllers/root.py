@@ -75,6 +75,26 @@ class RootController(BaseController):
             "parametri": params,
         }
 
+    @expose('filmwebapp.templates.tavolapit')
+    def tavolapit(self):
+
+        righe = 10
+        colonne = 10
+
+        dati = []
+        
+        for r in range(1,righe + 1):
+            riga = []
+            dati.append(riga)
+            for c in range(1, colonne + 1):
+                riga.append( r * c )
+
+        return {
+            'dati': dati
+        }
+
+
+
     @expose('json')
     def clienti(self):
         clienti = [
